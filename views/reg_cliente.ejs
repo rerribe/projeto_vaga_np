@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>registrar clientes</title>
+        <!-- the form awesome library is used to add icons to our form -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <!-- include the stylesheet file -->
+        <link href="/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<%- include('partials/navbar.ejs') %>
+		<h2> Essa pagina realiza a inserção de dados de produtor e propriedade</h2>
+		<div class="login">
+			<h1>registrar produtor/propriedade</h1>
+			<form action="/regcliente" method="post">
+				<label for="nomeProdutor">Nome do produtor</label>
+				<input type="text" name="nomeProdutor" placeholder="nomeProdutor" id="username" required>
+				<label for="cpfProdutor"> CPF do produtor</label>
+				<input type="text" name="cpfProdutor" placeholder="cpfProdutor" id="username" required>
+				<label for="nomePropriedade">Nome da propriedade</label>
+				<input type="text" name="nomePropriedade" placeholder="nomePropriedade" id="username" required>
+				<label for="cadastroRural">Cadastro Rural</label>
+				<input type="text" name="cadastroRural" placeholder="cadastroRural" id="username" required>
+				<input type="submit" value="registrar dados">
+			</form>
+		</div>
+	</body>
+</html>

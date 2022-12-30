@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= username %></title>
+    <link rel='stylesheet' href='style.css' />
+  </head>
+  <body>
+    <%- include('partials/navbar.ejs') %>
+    <h2>essa página leva ao registro de produtor/propriedade </h2>
+    <h2>só pode ser acessada caso algum usuário esteja logado</h2>
+    <div class="resposta">
+    <h1><%= username %></h1>
+    <label>registrar clientes</label>
+    <a class="linkreg" href="/regiscliente">registrar produtor e propriedade</a>
+    <p>Welcome to <%= username %></p>
+    </div>   
+  </body>
+</html>
